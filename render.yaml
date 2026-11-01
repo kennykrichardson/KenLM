@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: kennylm
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: KENNYLM_API_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: CONTEXT_SIZE
+        value: "512"
+      - key: MAX_TOKENS
+        value: "160"
+      - key: MODEL_THREADS
+        value: "1"
