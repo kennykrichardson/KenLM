@@ -18,7 +18,7 @@ RUN pip install --upgrade pip setuptools wheel \
 
 RUN mkdir -p /opt/kenlm/models \
     && curl -fL --retry 3 \
-    "https://huggingface.co/tensorblock/SmolLM2-135M-Instruct-GGUF/resolve/main/SmolLM2-135M-Instruct-Q4_K_M.gguf" \
+    "https://huggingface.co/lmstudio-community/SmolLM2-135M-Instruct-GGUF/resolve/main/SmolLM2-135M-Instruct-Q4_K_M.gguf" \
     -o /opt/kenlm/models/smollm2-135m-instruct-q4_k_m.gguf
 
 COPY app ./app

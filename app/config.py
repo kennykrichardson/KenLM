@@ -7,11 +7,12 @@ class Settings(BaseSettings):
     app_name: str = "KenLM"
     app_version: str = "0.1.0"
     model_path: str = "/opt/kenlm/models/smollm2-135m-instruct-q4_k_m.gguf"
-    model_repo: str = "tensorblock/SmolLM2-135M-Instruct-GGUF"
+    model_repo: str = "lmstudio-community/SmolLM2-135M-Instruct-GGUF"
     model_filename: str = "SmolLM2-135M-Instruct-Q4_K_M.gguf"
     model_url: str = (
-        "https://huggingface.co/tensorblock/SmolLM2-135M-Instruct-GGUF/"
-        "resolve/main/SmolLM2-135M-Instruct-Q4_K_M.gguf"
+        "https://huggingface.co/lmstudio-community/"
+        "SmolLM2-135M-Instruct-GGUF/resolve/main/"
+        "SmolLM2-135M-Instruct-Q4_K_M.gguf"
     )
     context_size: int = 512
     max_tokens: int = 160
