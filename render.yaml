@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: kenlm
+    name: kenlm-api
     runtime: docker
     plan: free
     healthCheckPath: /health
