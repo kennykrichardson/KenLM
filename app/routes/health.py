@@ -9,14 +9,14 @@ async def health(request: Request):
     return {
         "status": "ok" if loaded else "loading",
         "model_loaded": loaded,
-        "service": "KennyLM",
+        "service": "KenLM",
     }
 
 
 @router.get("/")
 async def root():
     return {
-        "name": "KennyLM",
+        "name": "KenLM",
         "description": "A tiny self-hosted language model API.",
         "docs": "/docs",
         "health": "/health",

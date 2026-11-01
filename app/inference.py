@@ -38,7 +38,7 @@ class InferenceEngine:
     def _download_model(destination: Path) -> None:
         settings = get_settings()
         temporary = destination.with_suffix(".download")
-        headers = {"User-Agent": "KennyLM/0.1"}
+        headers = {"User-Agent": "KenLM/0.1"}
         with httpx.stream(
             "GET",
             settings.model_url,

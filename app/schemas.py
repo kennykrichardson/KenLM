@@ -32,7 +32,7 @@ class ChatMessage(BaseModel):
 
 
 class ChatCompletionRequest(BaseModel):
-    model: str = "kennylm-small"
+    model: str = "kenlm-small"
     messages: list[ChatMessage] = Field(min_length=1, max_length=12)
     max_tokens: int = Field(default=160, ge=1, le=256)
     temperature: float = Field(default=0.45, ge=0.0, le=1.5)

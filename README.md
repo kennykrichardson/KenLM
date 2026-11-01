@@ -191,7 +191,7 @@ KenLM is an evolving project. Performance, resource usage and deployment reliabi
 **Kenny Richardson**
 
 - GitHub: [@kennykrichardson](https://github.com/kennykrichardson)
-- Portfolio: [kennykrichardson-ai.onrender.com](https://kennykrichardson-ai.onrender.com)
+- Portfolio: [kennykrichardson.onrender.com](https://kennykrichardson.onrender.com)
 
 ---
 

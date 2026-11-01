@@ -14,9 +14,9 @@ async def models():
     return {
         "object": "list",
         "data": [{
-            "id": "kennylm-small",
+            "id": "kenlm-small",
             "object": "model",
-            "owned_by": "kennyrichardson",
+            "owned_by": "richardson",
         }],
     }
 
@@ -37,7 +37,7 @@ async def generate(payload: GenerateRequest, request: Request):
         choice = result["choices"][0]
         return {
             "text": choice["message"]["content"].strip(),
-            "model": "kennylm-small",
+            "model": "kenlm-small",
             "usage": result.get("usage", {}),
         }
     except Exception as exc:
@@ -62,7 +62,7 @@ async def chat_completions(payload: ChatCompletionRequest, request: Request):
             "id": f"chatcmpl-{uuid.uuid4().hex[:16]}",
             "object": "chat.completion",
             "created": int(time.time()),
-            "model": "kennylm-small",
+            "model": "kenlm-small",
             "choices": [{
                 "index": 0,
                 "message": result["choices"][0]["message"],

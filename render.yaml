@@ -1,11 +1,11 @@
 services:
   - type: web
-    name: kennylm
+    name: kenlm
     runtime: docker
     plan: free
     healthCheckPath: /health
     envVars:
-      - key: KENNYLM_API_KEY
+      - key: KENLM_API_KEY
         generateValue: true
       - key: CORS_ORIGINS
         value: "*"
