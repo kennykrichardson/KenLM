@@ -3,9 +3,10 @@ services:
     name: kenlm-api
     runtime: docker
     plan: free
+    region: singapore
     healthCheckPath: /health
     envVars:
-      - key: KENLM_API_KEY
+      - key: KENNYLM_API_KEY
         generateValue: true
       - key: CORS_ORIGINS
         value: "*"
